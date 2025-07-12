@@ -1,0 +1,71 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services' // 🔥 Plugin de Firebase
+}
+
+android {
+    namespace 'com.lamasia.applamasia'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.lamasia.applamasia"
+        minSdk 21
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    // 🔧 Soluciona conflictos de clases duplicadas (commons-logging)
+    packagingOptions {
+        exclude 'META-INF/INDEX.LIST'
+        exclude 'META-INF/DEPENDENCIES'
+    }
+
+    // Opcional: evitar que Lint bloquee por errores conocidos
+    lint {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+}
+
+dependencies {
+    // Core Android
+    implementation 'androidx.core:core-ktx:1.13.1'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.11.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.activity:activity:1.8.0'
+
+    // Firebase BOM
+    implementation platform('com.google.firebase:firebase-bom:32.7.2')
+    implementation 'com.google.firebase:firebase-auth'
+    implementation 'com.google.firebase:firebase-database'
+    implementation 'com.google.firebase:firebase-storage'
+    implementation 'com.google.firebase:firebase-firestore'
+    implementation 'com.google.firebase:firebase-messaging' // ✅ para notificaciones
+
+    // Glide para imágenes
+    implementation 'com.github.bumptech.glide:glide:4.16.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.16.0'
+
+    // 🔐 Google Auth para obtener token con JSON desde FCM HTTP v1
+    implementation('com.google.auth:google-auth-library-oauth2-http:1.21.0') {
+        exclude group: 'commons-logging', module: 'commons-logging'
+    }
+
+    // ✅ Volley para peticiones HTTP (necesario para FCMHelperV1)
+    implementation 'com.android.volley:volley:1.2.1'
+}

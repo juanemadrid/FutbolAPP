@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_estadio">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/logoLaMasia"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/logo_masia_sin_fondo"
+            android:contentDescription="Logo La Masía" />
+
+        <!-- Título -->
+        <TextView
+            android:id="@+id/txtTituloAdmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Administrador"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp" />
+
+        <!-- Panel resumen -->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:useDefaultMargins="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp">
+
+            <!-- Jugadores Registrados -->
+            <LinearLayout
+                android:id="@+id/cardJugadores"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:background="@drawable/bg_card"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_margin="6dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jugadores"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/txtTotalJugadores"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Eventos -->
+            <LinearLayout
+                android:id="@+id/cardEventos"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:background="@drawable/bg_card"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_margin="6dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Eventos"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/txtTotalEventos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Pagos -->
+            <LinearLayout
+                android:id="@+id/cardPagos"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:background="@drawable/bg_card"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_margin="6dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pagos"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/txtTotalPagos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Sin Documento -->
+            <LinearLayout
+                android:id="@+id/cardSinDocumento"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:background="@drawable/bg_card"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_margin="6dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sin Documento"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/txtSinRegistroCivil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </GridLayout>
+
+        <!-- Botones funcionales -->
+        <Button
+            android:id="@+id/btnGestionPerfilJugador"
+            style="@style/AdminButton"
+            android:text="👦 Buscar Jugador Por ID"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnGestionCalendario"
+            style="@style/AdminButton"
+            android:text="📅 Calendario de Eventos"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnGestionAvisos"
+            style="@style/AdminButton"
+            android:text="📢 Publicar Avisos"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnGestionPagos"
+            style="@style/AdminButton"
+            android:text="💰 Control de Pagos"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+</ScrollView>

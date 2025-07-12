@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Colores por defecto del tema -->
+    <color name="purple_200">#BB86FC</color>
+    <color name="purple_700">#3700B3</color>
+    <color name="teal_200">#03DAC5</color>
+    <color name="teal_700">#018786</color>
+
+    <!-- Personalizados -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="red">#E63946</color>
+    <color name="dark_red">#B71C1C</color>
+    <color name="light_gray">#F5F5F5</color>
+    <color name="gray">#888888</color>
+    <color name="blue">#1E88E5</color>
+
+    <!-- ✅ Color que hacía falta -->
+    <color name="azulOscuro">#061C3B</color>
+</resources>

@@ -1,0 +1,68 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- 🌞 Tema claro personalizado para La Masía -->
+    <style name="Theme.Applamasia" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">#5D1049</item> <!-- Vino Tinto -->
+        <item name="colorPrimaryVariant">#3E0C35</item> <!-- Más oscuro -->
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorSecondary">#FFC107</item> <!-- Dorado -->
+        <item name="colorSecondaryVariant">#FFB300</item>
+        <item name="colorOnSecondary">#000000</item>
+        <item name="android:statusBarColor">#3E0C35</item>
+    </style>
+
+    <!-- ✅ Etiqueta general para formularios -->
+    <style name="LabelStyle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginBottom">4dp</item>
+    </style>
+
+    <!-- 💬 Títulos de etiquetas (formularios, perfil, etc) -->
+    <style name="LabelTitle">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginTop">12dp</item>
+    </style>
+
+    <!-- 📌 Valores debajo de las etiquetas -->
+    <style name="LabelValue">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_marginTop">4dp</item>
+    </style>
+
+    <!-- 🔘 Botones modernos y estilizados -->
+    <style name="AdminButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:background">@drawable/bg_admin_button</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:layout_marginBottom">12dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:drawablePadding">12dp</item>
+    </style>
+
+    <!-- 📥 Estilo de campos de entrada EditText -->
+    <style name="InputStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/edittext_background</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- 🗓️ Estilo para días del calendario -->
+    <style name="DiaSemanaStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+</resources>

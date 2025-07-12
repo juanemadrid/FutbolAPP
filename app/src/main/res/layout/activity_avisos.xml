@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#002F6C"
+    android:padding="16dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnAgregarAviso"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Título fijo -->
+            <TextView
+                android:id="@+id/tvTituloAvisos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📣 Avisos publicados"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:padding="16dp"
+                android:background="#001F4D" />
+
+            <!-- ✅ Texto de “no hay avisos” -->
+            <TextView
+                android:id="@+id/tvSinAvisos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No hay avisos disponibles"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:padding="24dp"
+                android:visibility="gone" />
+
+            <!-- Contenedor de avisos -->
+            <LinearLayout
+                android:id="@+id/layoutAvisos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="100dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Botón de agregar -->
+    <ImageButton
+        android:id="@+id/btnAgregarAviso"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:background="@drawable/circle_yellow"
+        android:src="@android:drawable/ic_input_add"
+        android:tint="#000000"
+        android:contentDescription="Agregar aviso" />
+</RelativeLayout>

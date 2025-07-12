@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F0F0F0">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <!-- Título de eventos -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📅 EVENTOS"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:padding="8dp"
+            android:background="#D0E1FF"
+            android:textColor="#000000" />
+
+        <!-- Lista de eventos -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvEventos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Título de avisos -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📣 AVISOS"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:padding="8dp"
+            android:background="#FFF0D0"
+            android:textColor="#000000" />
+
+        <!-- Contenedor dinámico de avisos -->
+        <LinearLayout
+            android:id="@+id/contenedorAvisos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registro Escuela de Fútbol"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <EditText android:id="@+id/etCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Correo para iniciar sesión" />
+
+        <EditText android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña"
+            android:inputType="textPassword" />
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Datos del Acudiente"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp" />
+
+        <EditText android:id="@+id/etNombreAcudiente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre completo del acudiente" />
+
+        <Spinner android:id="@+id/spinnerTipoDocumento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText android:id="@+id/etCedulaAcudiente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Número del documento" />
+
+        <EditText android:id="@+id/etTelefonoAcudiente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Teléfono de contacto" />
+
+        <EditText android:id="@+id/etCorreoAcudiente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Correo electrónico del acudiente" />
+
+        <EditText android:id="@+id/etDireccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Dirección de residencia" />
+
+        <EditText android:id="@+id/etOcupacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ocupación (opcional)" />
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Datos del Jugador"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp" />
+
+        <EditText android:id="@+id/etNombreJugador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre completo del jugador" />
+
+        <EditText android:id="@+id/etFechaNacimiento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Fecha de nacimiento"
+            android:focusable="false"
+            android:clickable="true" />
+
+        <Spinner android:id="@+id/spinnerCategoria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText android:id="@+id/etColegio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre del colegio" />
+
+        <EditText android:id="@+id/etPosicion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Posición favorita" />
+
+        <EditText android:id="@+id/etEPS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="EPS o seguro médico" />
+
+        <EditText android:id="@+id/etAlergias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Alergias o condiciones médicas" />
+
+        <ImageView
+            android:id="@+id/imgDocumento"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="16dp"
+            android:scaleType="centerCrop"
+            android:background="#E0E0E0"
+            android:contentDescription="Imagen del documento" />
+
+        <Button
+            android:id="@+id/btnSubirDocumento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Subir documento del jugador"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox android:id="@+id/checkAutorizacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Autorizo el uso de datos e imagen del jugador"
+            android:layout_marginTop="16dp" />
+
+        <Button android:id="@+id/btnRegistrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registrar"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#C62828"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</ScrollView>

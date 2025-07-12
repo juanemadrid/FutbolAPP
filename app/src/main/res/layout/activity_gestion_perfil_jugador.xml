@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_masia"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@android:color/transparent">
+
+        <!-- Buscar por ID -->
+        <EditText
+            android:id="@+id/etIdentificacionBuscar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese ID del jugador"
+            android:inputType="number"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="#FFD700"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#CCCCCC" />
+
+        <Button
+            android:id="@+id/btnBuscarJugador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🔍 Buscar jugador"
+            android:backgroundTint="#FFD700"
+            android:textColor="#000000"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Recuadro flotante -->
+        <LinearLayout
+            android:id="@+id/contenedorDatos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:background="@drawable/fondo_flotante"
+            android:padding="16dp"
+            android:layout_marginTop="12dp">
+
+            <ImageView
+                android:id="@+id/ivFotoJugador"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"
+                android:src="@drawable/ic_person"
+                android:scaleType="centerCrop"
+                android:background="@drawable/borde_imagen" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre completo:"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF" />
+            <TextView
+                android:id="@+id/tvNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edad:"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                android:textColor="#FFFFFF" />
+            <TextView
+                android:id="@+id/tvEdad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Categoría:"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                android:textColor="#FFFFFF" />
+            <TextView
+                android:id="@+id/tvCategoria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EPS:"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                android:textColor="#FFFFFF" />
+            <TextView
+                android:id="@+id/tvEPS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contacto emergencia:"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                android:textColor="#FFFFFF" />
+            <TextView
+                android:id="@+id/tvContactoEmergencia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Teléfono emergencia:"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                android:textColor="#FFFFFF" />
+            <TextView
+                android:id="@+id/tvTelefonoEmergencia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btnDescargarDocumento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📄 Descargar documento del jugador"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#4CAF50"
+                android:textColor="#FFFFFF"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnEliminarDocumento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🗑️ Eliminar Documento"
+                android:layout_marginTop="12dp"
+                android:backgroundTint="#D32F2F"
+                android:textColor="#FFFFFF"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lamasia.applamasia">
+
+    <!-- Permisos necesarios -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="FútbolApp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Applamasia"
+        android:requestLegacyExternalStorage="true">
+
+        <!-- ACTIVIDADES -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".AdminDashboardActivity" />
+        <activity android:name=".UserDashboardActivity" />
+        <activity android:name=".CalendarioEventosActivity" />
+        <activity android:name=".PerfilJugadorActivity" />
+        <activity android:name=".ListaPagosActivity" />
+        <activity android:name=".PagosActivity" />
+        <activity android:name=".GestionPerfilJugadorActivity" />
+        <activity android:name=".AvisosActivity" />
+        <activity android:name=".ListaJugadoresActivity" />
+        <activity android:name=".ResumenEventosActivity" />
+        <activity android:name=".JugadoresSinDocumentoActivity" />
+
+        <!-- ✅ NUEVA ACTIVIDAD QUE FALTABA -->
+        <activity android:name=".DetalleJugadorActivity" />
+
+        <!-- SERVICIOS -->
+        <service
+            android:name=".fcm.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="default_channel_id" />
+    </application>
+</manifest>

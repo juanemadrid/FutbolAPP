@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_estadio"
+    android:padding="16dp"
+    tools:context=".UserDashboardActivity">
+
+    <!-- Logo principal -->
+    <ImageView
+        android:id="@+id/logoLaMasia"
+        android:layout_width="400dp"
+        android:layout_height="250dp"
+        android:src="@drawable/logo_masia_sin_fondo"
+        android:layout_marginTop="32dp"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="Logo La Masía" />
+
+    <!-- Texto bienvenida -->
+    <TextView
+        android:id="@+id/tvBienvenida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bienvenido Familia FutbolApp"
+        android:textSize="22sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_below="@id/logoLaMasia"
+        android:layout_marginTop="12dp"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Menú de botones con íconos -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvBienvenida"
+        android:layout_marginTop="24dp">
+
+        <LinearLayout
+            android:id="@+id/menuBotones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="100dp">
+
+            <Button
+                android:id="@+id/btnPerfilNino"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="👦 Perfil del jugador"
+                android:backgroundTint="#5D1049"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp" />
+
+            <Button
+                android:id="@+id/btnCalendario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📅 Calendario de Entrenamientos y Partidos"
+                android:backgroundTint="#388E3C"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp" />
+
+            <Button
+                android:id="@+id/btnAvisos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📢 Avisos y Comunicados"
+                android:backgroundTint="#F57C00"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp" />
+
+            <Button
+                android:id="@+id/btnPagos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="💰 Pagos y Mensualidades"
+                android:backgroundTint="#D32F2F"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Botón WhatsApp funcional sin ícono -->
+            <Button
+                android:id="@+id/btnSoporte"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="💬 Contáctanos por WhatsApp"
+                android:backgroundTint="#25D366"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
+

@@ -1,0 +1,12 @@
+<resources>
+    <string-array name="categorias_futbol">
+        <item>Sub-6</item>
+        <item>Sub-8</item>
+        <item>Sub-10</item>
+        <item>Sub-12</item>
+        <item>Sub-14</item>
+        <item>Sub-16</item>
+        <item>Sub-18</item>
+        <item>Libre</item>
+    </string-array>
+</resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#002F6C"
+    android:padding="16dp">
+
+    <!-- 🔵 LOGO -->
+    <ImageView
+        android:id="@+id/logoClub"
+        android:layout_width="200dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo_masia_sin_fondo"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="30dp" />
+
+    <!-- 🟡 TÍTULO -->
+    <TextView
+        android:id="@+id/tvCalendario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CALENDARIO"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#FFD700"
+        android:layout_below="@id/logoClub"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp" />
+
+    <!-- 🟠 DÍAS DE LA SEMANA CON FECHAS DEBAJO -->
+    <HorizontalScrollView
+        android:id="@+id/scrollDias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvCalendario"
+        android:layout_marginTop="12dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/layoutDiasSemana"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="8dp" />
+    </HorizontalScrollView>
+
+    <!-- 🟢 EVENTOS -->
+    <ScrollView
+        android:id="@+id/scrollEventos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/scrollDias"
+        android:layout_above="@id/btnAgregarEvento"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:id="@+id/layoutEventos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="100dp" />
+    </ScrollView>
+
+    <!-- 🔘 BOTÓN AGREGAR EVENTO -->
+    <ImageButton
+        android:id="@+id/btnAgregarEvento"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:background="@drawable/circle_yellow"
+        android:src="@android:drawable/ic_input_add"
+        android:tint="#000000"
+        android:contentDescription="Agregar evento" />
+</RelativeLayout>

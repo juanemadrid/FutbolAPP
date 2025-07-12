@@ -1,0 +1,47 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- 🌞 Tema claro personalizado para La Masía con color rojo -->
+    <style name="Theme.Applamasia" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">#D32F2F</item> <!-- Rojo principal -->
+        <item name="colorPrimaryVariant">#B71C1C</item> <!-- Rojo más oscuro -->
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorSecondary">#F44336</item> <!-- Rojo más vivo para acentos -->
+        <item name="colorSecondaryVariant">#D32F2F</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+        <item name="android:statusBarColor">#B71C1C</item>
+    </style>
+
+    <!-- 🔘 Botones de administrador personalizados -->
+    <style name="AdminButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:background">@drawable/bg_admin_button</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:layout_marginBottom">12dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:drawablePadding">12dp</item>
+    </style>
+
+    <!-- 💬 Botón de inicio o login con color rojo -->
+    <style name="LoginButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:background">?attr/colorPrimary</item> <!-- Usando el color primario rojo -->
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:layout_marginBottom">12dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- 🗓️ Estilo para los días de la semana en calendarios -->
+    <style name="DiaSemanaStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_card"
+        android:padding="16dp">
+
+        <!-- Imagen del Jugador -->
+        <ImageView
+            android:id="@+id/ivFotoJugador"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_person"
+            android:background="@drawable/border_image" />
+
+        <!-- Botón para subir foto -->
+        <Button
+            android:id="@+id/btnSeleccionarFoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📸 Subir Foto del Jugador"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#FFC107"
+            android:textColor="#000000" />
+
+        <!-- Identificación -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Número de identificación del jugador"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="12dp" />
+
+        <EditText
+            android:id="@+id/etIdentificacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ej: 123456789"
+            android:inputType="number"
+            android:background="@drawable/edittext_background" />
+
+        <!-- Nombre -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre completo del jugador"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="12dp" />
+
+        <EditText
+            android:id="@+id/etNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ej: Juan Pérez"
+            android:background="@drawable/edittext_background" />
+
+        <!-- Edad -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edad del jugador"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="12dp" />
+
+        <EditText
+            android:id="@+id/etEdad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ej: 12 años"
+            android:inputType="number"
+            android:background="@drawable/edittext_background" />
+
+        <!-- Categoría -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Categoría (Ej: 2012, 2013)"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="12dp" />
+
+        <EditText
+            android:id="@+id/etCategoria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ej: 2012"
+            android:background="@drawable/edittext_background" />
+
+        <!-- EPS -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EPS del jugador"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="12dp" />
+
+        <EditText
+            android:id="@+id/etEPS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ej: Sura, Coomeva"
+            android:background="@drawable/edittext_background" />
+
+        <!-- Contacto Emergencia -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre del contacto de emergencia"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="12dp" />
+
+        <EditText
+            android:id="@+id/etContactoEmergencia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ej: María Gómez"
+            android:background="@drawable/edittext_background" />
+
+        <!-- Teléfono de emergencia -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Teléfono de emergencia"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="12dp" />
+
+        <EditText
+            android:id="@+id/etTelefonoEmergencia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ej: 3201234567"
+            android:inputType="phone"
+            android:background="@drawable/edittext_background" />
+
+        <!-- Botón para subir documento -->
+        <Button
+            android:id="@+id/btnSeleccionarDocumento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📎 Seleccionar Documento"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#1976D2"
+            android:textColor="#FFFFFF" />
+
+        <!-- Botón para eliminar documento -->
+        <Button
+            android:id="@+id/btnEliminarDocumento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="❌ Eliminar Documento"
+            android:backgroundTint="#D32F2F"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="8dp" />
+
+        <!-- Botón para guardar -->
+        <Button
+            android:id="@+id/btnGuardarPerfil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="💾 Guardar Perfil del Jugador"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp" />
+    </LinearLayout>
+</ScrollView>

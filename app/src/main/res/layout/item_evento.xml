@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#0A2B6C"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_marginBottom="12dp"
+    android:layout_marginHorizontal="8dp"
+    android:elevation="4dp">
+
+    <TextView
+        android:id="@+id/tvTipoEvento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Partido"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvFechaEvento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Miércoles / 26 jun"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/tvDescripcionEvento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LA MASIA vs. TIGRES"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/tvHoraEvento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9:00 a.m."
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:layout_marginTop="4dp" />
+</LinearLayout>

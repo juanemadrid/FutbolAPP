@@ -1,0 +1,18 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:left="2dp" android:top="2dp">
+        <!-- Sombra sutil -->
+        <shape>
+            <solid android:color="#B0BEC5"/> <!-- Gris claro tras la tarjeta -->
+            <corners android:radius="18dp"/>
+        </shape>
+    </item>
+
+    <item>
+        <shape>
+            <!-- Fondo principal -->
+            <solid android:color="#1E3A5F"/> <!-- Azul vino tinto -->
+            <stroke android:width="2dp" android:color="#FFC107"/> <!-- Dorado -->
+            <corners android:radius="18dp"/>
+        </shape>
+    </item>
+</layer-list>
