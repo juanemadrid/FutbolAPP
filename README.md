@@ -74,5 +74,8 @@
 
 ## 🔧 Cómo ejecutar la app
 
-1. Abre el proyecto con **Android Studio**.
-2. Coloca tu archivo `firebase-key.json` en:
+1. Abre el proyecto con **Android Studio**.  
+2. Coloca tu archivo `firebase-key.json` en la ruta:  
+   `app/src/main/assets/firebase-key.json`  
+3. Configura tu cuenta de Firebase con las credenciales correspondientes.  
+4. Sincroniza el proyecto y ejecuta la app en un emulador o dispositivo.  
