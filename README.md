@@ -63,7 +63,7 @@
 
 ## 🚀 Tecnologías utilizadas
 
-- Kotlin / Java (Android)
+- Java (Android)
 - Firebase Authentication
 - Firebase Firestore
 - Firebase Storage
